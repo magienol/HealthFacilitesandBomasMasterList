@@ -1,0 +1,42 @@
+/* Home Container */
+.home-container {
+    text-align: center; /* Centers the content */
+    margin-top: 40px; /* Adds top margin for spacing */
+    padding: 0 20px; /* Adds padding to the sides for smaller screens */
+  }
+  
+  /* Header Styling for Welcome Message */
+  .home-container h1 {
+    font-size: 2.5rem; /* Adjust font size as needed */
+    margin-bottom: 40px; /* Adds space below the welcome message */
+  }
+  
+  /* Section Title (Facilities Overview and Bomas Overview) */
+  h2 {
+    font-size: 1.8rem;
+    margin-top: 40px; /* Adds space before each section */
+    margin-bottom: 20px; /* Adds space below each section title */
+  }
+  
+  /* Adding Space Between Data Cards */
+  .DataCard {
+    display: flex;
+    justify-content: space-between; /* Adds space between the cards */
+    gap: 20px; /* Optional: Adds a gap between each card */
+    flex-wrap: wrap; /* Ensures that if the screen size is small, the cards will wrap */
+    padding: 0 20px; /* Adds space on the left and right of the container */
+    margin-bottom: 40px; /* Adds space below the data card sections */
+  }
+  
+  /* Data Cards */
+  .DataCard > .card {
+    flex: 1 1 15.66%; /* Flex items take up roughly 16.66% of the width to show 6 cards per row */
+    min-width: 150px; /* Ensures a minimum width for each card */
+    box-sizing: border-box;
+    padding: 20px; /* Adds padding inside the cards */
+    border: 1px solid #ccc; /* Adds a light border around each card */
+    border-radius: 8px; /* Optional: Rounds the corners of the cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow for depth */
+    background-color: #fff; /* Ensures the background is white */
+  }
+  

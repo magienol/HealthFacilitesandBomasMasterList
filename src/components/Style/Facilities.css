@@ -1,0 +1,153 @@
+/* General Styles for Facilities Container */
+.facilities-container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  background-color: #f9f9f9;
+  justify-content: space-between; /* Aligns filter and table sections */
+}
+
+.filters-container {
+  width: 25%; /* 25% width for filters */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-container {
+  width: 90%; /* 90% width for table */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Fields and Select Box for Filters */
+.MuiFormControl-root {
+  margin-bottom: 15px;
+}
+
+.MuiInputLabel-root {
+  color: #333;
+}
+
+.MuiOutlinedInput-root {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.MuiSelect-root {
+  background-color: #fff;
+}
+
+/* Search and Download Section */
+.search-download-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 5%; /* Space between the search input and download button */
+}
+
+.search-input {
+  width: 70%; /* Search bar takes up 70% of the space */
+  height: 50px; /* Ensures the search bar has a fixed height */
+}
+
+.download-button {
+  width: 1%; /* Download button takes up 25% of the space */
+  height: 50px; /* Ensures the download button has a fixed height */
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-button:hover {
+  background-color: #0056b3;
+}
+
+.MuiMenuItem-root {
+  cursor: pointer;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Pagination Styles */
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.MuiPaginationItem-root {
+  margin: 0 5px;
+  font-size: 14px;
+  color: #007bff;
+}
+
+.MuiPaginationItem-root:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .facilities-container {
+    flex-direction: column;
+  }
+
+  .filters-container {
+    width: 100%; /* Filters take full width on small screens */
+    margin-bottom: 20px;
+  }
+
+  .table-container {
+    width: 100%; /* Table takes full width on small screens */
+  }
+
+  .search-download-container {
+    flex-direction: column;
+    gap: 10px; /* Adjust the gap for smaller screens */
+  }
+
+  .search-input {
+    width: 100%; /* Full width for smaller screens */
+  }
+
+  .download-button {
+    width: 100%; /* Full width for smaller screens */
+    margin-top: 10px;
+  }
+}

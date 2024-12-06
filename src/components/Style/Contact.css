@@ -1,0 +1,102 @@
+/* Container for the entire contact page */
+.contact-container {
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Title for both sections */
+  .contact-container h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for the form */
+  .contact-form {
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .MuiTextField-root {
+    margin-bottom: 5px;
+  }
+  
+  /* Reduced size for the message textarea */
+  textarea {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    resize: vertical;
+    min-height: 80px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the file input field */
+  input[type="file"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  /* Submit button */
+  button.MuiButton-root {
+    background-color: #0073e6;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    width: 100%;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 50px;
+  }
+  
+  button.MuiButton-root:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Styling for the Contact Info section */
+  .contact-info {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+  }
+  
+  .contact-info a:hover {
+    color: #005bb5;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .contact-container {
+      padding: 20px;
+    }
+  
+    .contact-form .MuiGrid-item,
+    .contact-info .MuiGrid-item {
+      width: 100%;
+    }
+  
+    .contact-info {
+      margin-top: 20px;
+    }
+  }
+  

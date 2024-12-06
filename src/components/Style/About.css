@@ -1,0 +1,57 @@
+/* About.css */
+.about-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  h3 {
+    font-size: 1.8rem;
+    color: #2d6a4f;
+    border-bottom: 2px solid #2d6a4f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h4 {
+    font-size: 1.4rem;
+    color: #2d6a4f;
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: square;
+    margin-left: 20px;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  ul li {
+    margin-bottom: 10px;
+  }
+  
+  p, h3, h4 {
+    margin-left: 10px;
+  }
+  
+  strong {
+    color: #2d6a4f;
+  }
+  
+  .challenges-section,
+  .bomas-section {
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .bomas-section ul {
+    margin-left: 30px;
+  }
+  
