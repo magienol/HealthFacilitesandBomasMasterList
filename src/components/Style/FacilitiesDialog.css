@@ -1,0 +1,171 @@
+/* Dialog container */
+.facility-dialog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.facility-dialog-container.open {
+  display: flex;
+  opacity: 1;
+}
+
+/* Main dialog box */
+.facility-dialog {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 990px; /* Increased by 10% from 900px */
+  position: relative;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.9);
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Content Styling */
+.facility-dialog-content {
+  max-height: 80%;
+  overflow-y: auto;
+  padding-right: 12px;
+}
+
+.facility-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.facility-ministry-heading {
+  margin: 0;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.facility-logo {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.facility-logo img {
+  max-width: 130px;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #007BFF;
+  padding: 5px;
+}
+
+.facility-info-heading {
+  font-size: 26px;
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 600;
+  color: #007BFF;
+}
+
+.facility-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.facility-info-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.facility-info-item p {
+  font-size: 17px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.facility-info-item p strong {
+  font-weight: 600;
+  color: #333;
+}
+
+.facility-dialog-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.facility-close-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 14px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  max-width: 220px;
+  width: 100%;
+}
+
+.facility-close-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+hr {
+  margin: 30px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* QR Code Container */
+.qr-code-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.qr-code-description {
+  text-align: center;
+  margin-top: 12px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 500;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .facility-info {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .facility-info {
+    grid-template-columns: 1fr; /* 1 column per row on very small screens */
+  }
+}

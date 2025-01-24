@@ -1,0 +1,19 @@
+/* Style for Bomas Component */
+
+.search-input {
+  width: 70%; /* Search bar takes up 70% of the space */
+  height: 60px; /* Ensures the search bar has a fixed height */
+}
+
+.download-button {
+  width: 30%; /* Download button takes up 25% of the space */
+  height: 50px; /* Ensures the download button has a fixed height */
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
